@@ -89,7 +89,7 @@ kubectl port-forward -n nginx pod/<nginx-pod-name> 8080:80
 ```
 Now visit:
 
-arduino
+
 
 http://localhost:8080
 # ✔️ You should see the Nginx welcome page 🎉
