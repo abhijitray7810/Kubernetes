@@ -1,0 +1,4 @@
+kind: Namespace
+apiVersion: v1
+metadat:
+ name: apache
