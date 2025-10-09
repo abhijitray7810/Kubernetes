@@ -94,4 +94,18 @@ kubectl delete -f nginx-service.yaml
 ```bash
 kubectl delete namespace nginx
 ```
-Do you want me to also **add the Service manifest into the README** (so you don’t need to create a separate YAML file), or keep them separate?
+```
+kubectl scale deployment/nginx-deployment -n nginx --replicas=1,5,41,2,3
+```
+abhi@OMEN16:~/Kubernetes/kube-02/nginx$ kubectl scale deployment/nignx-deployment -n nginx --replicas=5
+deployment.apps/nignx-deployment scaled
+```
+kubectl get pods -n nginx
+```
+abhi@OMEN16:~/Kubernetes/kube-02/nginx$ kubectl get pods -n nginx
+NAME                                READY   STATUS    RESTARTS   AGE
+nignx-deployment-5f7bc67bd9-86zbt   1/1     Running   0          36s
+nignx-deployment-5f7bc67bd9-hrnvn   1/1     Running   0          10m
+nignx-deployment-5f7bc67bd9-ljzvc   1/1     Running   0          10m
+nignx-deployment-5f7bc67bd9-lt7cl   1/1     Running   0          36s
+nignx-deployment-5f7bc67bd9-pzvtv   1/1     Running   0          36s
