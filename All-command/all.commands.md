@@ -1,4 +1,4 @@
-
+ 
 # Kubernetes Rolling Update - Command Reference
 
 ## Table of Contents
