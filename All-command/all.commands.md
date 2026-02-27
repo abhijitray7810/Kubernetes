@@ -1,4 +1,4 @@
- # Kubernetes Rolling Update - Command Reference
+# Kubernetes Rolling Update - Command Reference
 
 ## Table of Contents
 - [Pre-Update Commands](#pre-update-commands)
